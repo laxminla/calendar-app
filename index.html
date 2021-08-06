@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <title>Work Day Scheduler</title>
+
 </head>
 
 <body>
@@ -22,24 +23,25 @@
 
 
 
+
   <!-- Timeblocks go here -->
 
   <div class="container">
     <div class="time-block">9AM</div>
     <input type="text" class="textarea" id="past" name="9" value="" />
-    <input type="submit" class="saveBtn" name="save" value="Save-9AM" />
+    <input type="submit" class="saveBtn" id="9" name="save" value="Save" onclick="saveEvent(this)" />
   </div>
 
   <div class="container">
     <div class="time-block">10AM</div>
     <input type="text" class="textarea" id="past" name="10" value="" />
-    <input type="submit" class="saveBtn" name="save" value="Save-10AM" />
+    <input type="submit" class="saveBtn" id="10" name="save" value="Save" onclick="saveEvent(this)" />
   </div>
 
   <div class="container">
     <div class="time-block">11AM</div>
     <input type="text" class="textarea" id="past" name="11" value="" />
-    <input type="submit" class="saveBtn" name="save" value="Save-11AM" />
+    <input type="submit" class="saveBtn" id="11" name="save" value="Save" onclick="saveEvent(this)" />
   </div>
 
 
@@ -47,7 +49,7 @@
   <div class="container">
     <div class="time-block">12PM</div>
     <input type="text" class="textarea" id="past" name="12" value="" />
-    <input type="submit" class="saveBtn" name="save" value="Save-12PM" />
+    <input type="submit" class="saveBtn" id="12" name="save" value="Save" onclick="saveEvent(this)" />
   </div>
 
 
@@ -56,7 +58,7 @@
   <div class="container">
     <div class="time-block">1PM</div>
     <input type="text" class="textarea" id="past" name="13" value="" />
-    <input type="submit" class="saveBtn" name="save" value="Save-1PM" />
+    <input type="submit" class="saveBtn" id="13" name="save" value="Save" onclick="saveEvent(this)" />
   </div>
 
 
@@ -64,7 +66,7 @@
   <div class="container">
     <div class="time-block">2PM</div>
     <input type="text" class="textarea" id="past" name="14" value="" />
-    <input type="submit" class="saveBtn" name="save" value="Save-2PM" />
+    <input type="submit" class="saveBtn" id="14" name="save" value="Save" onclick="saveEvent(this)" />
   </div>
 
 
@@ -73,7 +75,7 @@
   <div class="container">
     <div class="time-block">3PM</div>
     <input type="text" class="textarea" id="past" name="15" value="" />
-    <input type="submit" class="saveBtn" name="save" value="Save-3PM" />
+    <input type="submit" class="saveBtn" id="15" name="save" value="Save" onclick="saveEvent(this)" />
   </div>
 
 
@@ -82,7 +84,7 @@
   <div class="container">
     <div class="time-block">4PM</div>
     <input type="text" class="textarea" id="past" name="16" value="" />
-    <input type="submit" class="saveBtn" name="save" value="Save-4PM" />
+    <input type="submit" class="saveBtn" id="16" name="save" value="Save" onclick="saveEvent(this)" />
   </div>
 
 
@@ -91,18 +93,9 @@
   <div class="container">
     <div class="time-block">5PM</div>
     <input type="text" class="textarea" id="past" name="17" value="" />
-    <input type="submit" class="saveBtn" name="save" value="Save-5PM" />
+    <input type="submit" class="saveBtn" id="17" name="save" value="Save" onclick="saveEvent(this)" />
   </div>
-
-
-  <Button class="saveBtn">Button</Button>
   </div>
-
-
-
-
-
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
